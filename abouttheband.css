@@ -1,0 +1,22 @@
+body{background-color: rgb(43, 226, 171);}
+.pictures{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: unset;
+}
+.pictures{
+    display: flex;
+    justify-content: right;
+}
+
+.video{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1{
+    text-align: center;
+}
