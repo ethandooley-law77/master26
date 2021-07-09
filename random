@@ -1,18 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Example</title>
-</head>
-<body>
-<div class="container">
-<div class="topleft">topleft</div>
-<div class="topmid">topmid</div>
-<div class="topright">topright</div>
-<div class="cent">middle</div>
-<div class="botleft">botleft</div>
-<div class="botmid">botmid</div>
-<div class="botright">botright</div>
-</div>
-</body>
-</html>
+let rosie = {
+_name: "Rosie",
+_hops: 0,
+get name() {
+return this._name;
+},
+get hops() {
+return this._hops;
+},
+increaseHops() {
+this._hops++;
+}
+}
+
+
+
+
+
+
+class Bunny{
+constructor(name){
+this._name = name;
+this._hops = 0;
+}
+get name(){
+return this._name;
+}
+get hops(){
+return this._hops;
+}
+increaseHops(){
+this._hops++;
+}
+}
+
+const rosie = new Bunny("Rosie");
+console.log(rosie.name);
+
+
+
+
+class Bunny{
+constructor(name){
+this._name = name;
+this._hops = 0;
+}
+get name(){
+return this._name;
+}
+get hops(){
+return this._hops;
+}
+increaseHops(){
+this._hops++;
+}
+}
+
+const rosie = new Bunny("Rosie");
+const jim = new Bunny("Jim");
+const bob = new Bunny("Bob");
+
+jim.increaseHops();
+bob.increaseHops();
+bob.increaseHops();
+bob.increaseHops();
+
+console.log(rosie.hops);
+console.log(jim.hops);
+console.log(bob.hops);
